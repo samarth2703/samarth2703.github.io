@@ -10,17 +10,28 @@
 
 <!-- HERO -->
 <section class="hero">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="video/hero-bg.mp4" type="video/mp4">
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Content -->
   <div class="hero-content">
     <h1>Samarth Mishra</h1>
     <p>Security-Aware Developer · AI Explorer · System Thinker</p>
   </div>
+
 </section>
 
 <!-- ABOUT -->
 <section class="section">
-  <h2>About Me</h2>
+  <h2 class="section-title">ABOUT ME</h2>
   <p>
-    I am a technology enthusiast with a strong inclination toward security-oriented
+   <h4> I am a technology enthusiast with a strong inclination toward security-oriented
     development, programming, and artificial intelligence. I enjoy breaking down
     complex systems to understand how they work internally and then using that
     knowledge to build smarter, safer solutions.
@@ -28,110 +39,180 @@
   <p>
     My learning approach is hands-on, project-driven, and focused on real-world
     relevance rather than theory alone. I am particularly interested in how AI,
-    cybersecurity, and system-level programming intersect.
+    cybersecurity, and system-level programming intersect.</h4>
   </p>
 </section>
 
 <!-- AREAS OF INTEREST -->
-<section class="section alt">
-  <h2>Areas of Interest</h2>
-  <ul class="list">
-    <li>Cybersecurity & ethical hacking concepts</li>
-    <li>Artificial intelligence and large language models</li>
-    <li>Prompt engineering and AI workflow optimization</li>
-    <li>Core programming and system fundamentals</li>
-    <li>Open-source learning and experimentation</li>
-  </ul>
+<section class="interest-section">
+  <h2 class="interest-title">AREAS OF INTEREST</h2>
+
+  <div class="interest-grid">
+
+    <div class="interest-card" style="background-image: url('images/cyber.jpg');">
+      <div class="overlay">
+        <h3>CYBERSECURITY AND<br>ETHICAL HACKING CONCEPTS</h3>
+      </div>
+    </div>
+
+    <div class="interest-card" style="background-image: url('images/ai.jpg');">
+      <div class="overlay">
+        <h3>ARTIFICIAL INTELLIGENCE AND<br>LARGE LANGUAGE MODELS</h3>
+      </div>
+    </div>
+
+    <div class="interest-card" style="background-image: url('images/core.jpg');">
+      <div class="overlay">
+        <h3>CORE PROGRAMMING AND<br>SYSTEM FUNDAMENTALS</h3>
+      </div>
+    </div>
+
+    <div class="interest-card" style="background-image: url('images/open.jpg');">
+      <div class="overlay">
+        <h3>OPEN-SOURCE LEARNING AND<br>EXPERIMENTATION</h3>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section class="section">
-  <h2>Technical Skills</h2>
+  <h2 class="section-title">TECHNICAL SKILLS</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Programming & Development</h3>
-      <p>C, C++ for performance and fundamentals</p>
-      <p>Python for automation & AI projects</p>
-      <p>JavaScript for basic apps & chatbot logic</p>
+  <div class="skills-grid">
+
+    <div class="skill-card" style="background-image: url('images/programming.jpg');">
+      <div class="skill-overlay">
+        <h3>Programming & Development</h3>
+        <p>C, C++ for performance and fundamentals</p>
+        <p>Python for automation & AI projects</p>
+        <p>JavaScript for basic apps & chatbot logic</p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>AI & Automation</h3>
-      <p>AI assistant & task automation design</p>
-      <p>Large language model experimentation</p>
-      <p>Prompt engineering & output control</p>
+    <div class="skill-card" style="background-image: url('images/ai2.jpg');">
+      <div class="skill-overlay">
+        <h3>AI & Automation</h3>
+        <p>AI assistant & task automation design</p>
+        <p>Large language model experimentation</p>
+        <p>Prompt engineering & output control</p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Security & Systems</h3>
-      <p>Security-first coding mindset</p>
-      <p>Understanding vulnerabilities & defenses</p>
-      <p>Ethical hacking concepts (learning-focused)</p>
+    <div class="skill-card" style="background-image: url('images/security.jpg');">
+      <div class="skill-overlay">
+        <h3>Security & Systems</h3>
+        <p>Security-first coding mindset</p>
+        <p>Understanding vulnerabilities & defenses</p>
+        <p>Ethical hacking concepts (learning-focused)</p>
+      </div>
     </div>
+
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section class="section alt">
-  <h2>Selected Projects</h2>
+  <h2 class="section-title">SELECTED PROJECTS</h2>
 
-  <div class="card">
-    <h3>AI Assistant Development</h3>
-    <p>
-      Built AI-based assistant tools focused on productivity and automation using
-      Python, structured prompts, and task execution logic.
-    </p>
-  </div>
+  <div class="projects-grid">
 
-  <div class="card">
-    <h3>AI & LLM Exploration</h3>
-    <p>
-      Repositories documenting learning paths, experiments, and structured
-      self-learning around large language models and AI systems.
-    </p>
-  </div>
+    <a href="https://github.com/samarth2703/BuddyAI" target="_blank" class="project-card"
+       style="background-image: url('images/project1.jpg');">
+      <div class="project-overlay">
+        <h3>Buddy AI</h3>
+        <p>
+          A fully offline-capable, voice-controlled AI assistant that can think, speak, search the internet,
+           and control your Windows system — all running locally on your PC.
+        </p>
+      </div>
+    </a>
 
-  <div class="card">
-    <h3>Software Engineering Practice</h3>
-    <p>
-      Completed structured development tasks inspired by industry-oriented programs,
-      emphasizing clean code and logical problem solving.
-    </p>
-  </div>
+    <a href="https://github.com/samarth2703/password_manager" target="_blank" class="project-card"
+       style="background-image: url('images/project2.jpg');">
+      <div class="project-overlay">
+        <h3>Password Manager</h3>
+        <p>
+          A secure personal password manager built in Python using Tkinter, SQLite, Fernet encryption,
+           AES-256 export, and Encrypted PDF export. Designed for simplicity, privacy, and offline use.
+        </p>
+      </div>
+    </a>
 
-  <div class="card">
-    <h3>Chatbot & Interactive Tools</h3>
-    <p>
-      Developed chatbot-style applications to understand conversational flow,
-      interaction design, and backend logic.
-    </p>
+    <a href="https://github.com/samarth2703/forage-midas-complete" target="_blank" class="project-card"
+       style="background-image: url('images/project3.jpg');">
+      <div class="project-overlay">
+        <h3>Software Engineering Practice</h3>
+        <p>
+          Completed structured development tasks inspired by industry-oriented programs,
+          emphasizing clean code and logical problem solving.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://github.com/samarth2703/UK-govt-AI-chatbot" target="_blank" class="project-card"
+       style="background-image: url('images/project4.jpg');">
+      <div class="project-overlay">
+        <h3>Chatbot & Interactive Tools</h3>
+        <p>
+          Developed chatbot-style applications to understand conversational flow,
+          interaction design, and backend logic.
+        </p>
+      </div>
+    </a>
+
   </div>
 </section>
 
 <!-- PHILOSOPHY -->
 <section class="section">
-  <h2>Learning Philosophy</h2>
+  <h2 class="section-title">LEARNING PHILOSOPHY</h2>
   <ul class="list">
-    <li>Learn by building, not memorizing</li>
-    <li>Fundamentals before frameworks</li>
-    <li>Ethical and responsible technology use</li>
-    <li>Constant iteration and improvement</li>
+    <li><h3>Learn by building, not memorizing</h3></li>
+    <li><h3>Fundamentals before frameworks</h3></li>
+    <li><h3>Ethical and responsible technology use</h3></li>
+    <li><h3>Constant iteration and improvement</h3></li>
   </ul>
 </section>
 
 <!-- CAREER -->
 <section class="section alt">
-  <h2>Career Direction</h2>
+  <h2 class="section-title">CAREER DIRECTIONS</h2>
   <p>
-    I aim to grow as a security-aware software developer with strong AI integration
-    skills, focusing on building intelligent, reliable, secure, and scalable systems.
+   <h3> I aim to grow as a security-aware software developer with strong AI integration
+    skills, focusing on building intelligent, reliable, secure, and scalable systems.</h3>
   </p>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2 class="section-title">CONTACT ME</h2>
+
+  <div class="contact-container">
+
+    <a href="mailto:samarthmishra2703@gmail.com" class="contact-icon" target="_blank">
+      <img src="icons/mail.png" alt="Gmail">
+    </a>
+
+    <a href="https://github.com/samarth2703" class="contact-icon" target="_blank">
+      <img src="icons/github.png" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/samarth-mishra2703/" class="contact-icon" target="_blank">
+      <img src="icons/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <a href="https://www.instagram.com/shutter_saga2703/" class="contact-icon" target="_blank">
+      <img src="icons/instagram.png" alt="Instagram">
+    </a>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Samarth Mishra · Built with HTML & CSS</p>
+  <p>© 2026 Build by Samarth Mishra</p>
 </footer>
 
 </body>
